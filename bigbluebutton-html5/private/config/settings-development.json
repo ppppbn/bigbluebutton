@@ -81,7 +81,7 @@
       "enableScreensharing": true,
       "enableVideo": true,
       "enableVideoStats": true,
-      "enableListenOnly": false
+      "enableListenOnly": true
     },
 
     "acl": {
