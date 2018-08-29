@@ -163,10 +163,17 @@ const sendMessage = (receiverID, message) => {
 
   // TODO : Send this to main server
   
-
-  makeCall('sendChat', messagePayload);
-  const chatLog = exportChat(getPublicMessages());
-  console.log('chatLog', chatLog);
+  return new Promise((resolve, reject) => {
+    makeCall('sendChat', messagePayload)
+    .then((result) => {  
+      const chatLog = exportChat(getPublicMessages());
+      console.log('chatLog', chatLog);
+      resolve(result);
+    })
+    .catch(function(err){
+      reject(err);
+    })
+  })
 };
 
 const getScrollPosition = (receiverID) => {
