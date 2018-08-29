@@ -168,7 +168,9 @@ const sendMessage = (receiverID, message) => {
     .then((result) => {  
       const chatLog = exportChat(getPublicMessages());
       console.log('chatLog', chatLog);
-      resolve(result);
+      setTimeout(() => {
+        resolve(result);
+      }, 500);
     })
     .catch(function(err){
       reject(err);
