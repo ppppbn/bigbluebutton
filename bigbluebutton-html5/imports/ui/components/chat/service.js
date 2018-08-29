@@ -161,9 +161,9 @@ const sendMessage = (receiverID, message) => {
     Storage.setItem(CLOSED_CHAT_LIST_KEY, _.without(currentClosedChats, receiver.id));
   }
 
-  const chatLog = exportChat(getPublicMessages());
+  const chatLog = getPublicMessages();
   console.log('chatLog', chatLog);
-  console.log('message', exportChat([message]));
+  console.log('message', message);
 
   return makeCall('sendChat', messagePayload);
 };
