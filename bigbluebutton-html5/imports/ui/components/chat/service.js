@@ -162,10 +162,11 @@ const sendMessage = (receiverID, message) => {
   }
 
   // TODO : Send this to main server
+  
+
+  makeCall('sendChat', messagePayload);
   const chatLog = exportChat(getPublicMessages());
   console.log('chatLog', chatLog);
-
-  return makeCall('sendChat', messagePayload);
 };
 
 const getScrollPosition = (receiverID) => {
