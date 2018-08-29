@@ -163,7 +163,7 @@ const sendMessage = (receiverID, message) => {
 
   const chatLog = exportChat(getPublicMessages());
   console.log('chatLog', chatLog);
-  console.log('message', exportChat(message));
+  console.log('message', exportChat([message]));
 
   return makeCall('sendChat', messagePayload);
 };
