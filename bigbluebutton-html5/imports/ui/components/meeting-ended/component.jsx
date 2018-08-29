@@ -6,6 +6,7 @@ import Auth from '/imports/ui/services/auth';
 import Button from '/imports/ui/components/button/component';
 import Rating from './rating/component';
 import { styles } from './styles';
+import ChatService from '../chat/service';
 
 const intlMessage = defineMessages({
   410: {
@@ -84,6 +85,12 @@ class MeetingEnded extends React.PureComponent {
     this.sendFeedback = this.sendFeedback.bind(this);
     this.shouldShowFeedback = Meteor.settings.public.app.askForFeedbackOnLogout;
   }
+
+  componentDidMount() {
+    const chatLog = ChatService.exportChat(ChatService.getPublicMessages());
+    console.log('chatLog', chatLog);
+  }
+
   setSelectedStar(starNumber) {
     this.setState({
       selected: starNumber,
