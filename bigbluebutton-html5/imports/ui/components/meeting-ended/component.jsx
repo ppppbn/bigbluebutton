@@ -98,6 +98,7 @@ class MeetingEnded extends React.PureComponent {
   }
 
   sendFeedback() {
+    console.log('actually this is a send feedback button');
     const {
       selected,
     } = this.state;
