@@ -89,6 +89,7 @@ class MeetingEnded extends React.PureComponent {
   componentDidMount() {
     const chatLog = ChatService.exportChat(ChatService.getPublicMessages());
     console.log('chatLog', chatLog);
+    console.log('ended');
   }
 
   setSelectedStar(starNumber) {
