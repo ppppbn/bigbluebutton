@@ -67,13 +67,8 @@ export function joinRouteHandler(nextState, replace, callback) {
 
 export function logoutRouteHandler() {
   Auth.logout()
-    .then((logoutURL = window.location.origin) => {
-      const protocolPattern = /^((http|https):\/\/)/;
-
-      window.location.href =
-        protocolPattern.test(logoutURL) ?
-          logoutURL :
-          `http://${logoutURL}`;
+    .then(() => {
+      window.location.href = "https://skyace.techkids.io"
     });
 }
 
