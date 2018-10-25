@@ -110,7 +110,7 @@ class MeetingEnded extends React.PureComponent {
 
     if (selected <= 0) {
       router.push('/logout');
-      window.location.href = "https://skyace.techkids.io"
+      window.location.href = "https://demo-skyace.com"
     }
 
     const message = {
@@ -133,7 +133,7 @@ class MeetingEnded extends React.PureComponent {
       .finally(() => 
       { 
         router.push('/logout');
-        window.location.href = "https://skyace.techkids.io"
+        window.location.href = "https://demo-skyace.com"
       });
   }
 

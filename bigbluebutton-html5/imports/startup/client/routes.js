@@ -14,7 +14,7 @@ const browserHistory = useRouterHistory(createHistory)({
 
 const disconnect = () => {
   Meteor.disconnect();
-  window.location.href = "https://skyace.techkids.io";
+  window.location.href = "https://demo-skyace.com";
 };
 
 const renderRoutes = () => (
