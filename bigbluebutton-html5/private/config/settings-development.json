@@ -71,7 +71,7 @@
     },
 
     "kurento": {
-      "wsUrl": "wss://test.techkids.io/bbb-webrtc-sfu",
+      "wsUrl": "wss://streaming.demo-skyace.com/bbb-webrtc-sfu",
       "chromeDefaultExtensionKey": "akgoaoikmbmhcopjgakkcepdgdgkjfbc",
       "chromeDefaultExtensionLink": "https://chrome.google.com/webstore/detail/bigbluebutton-screenshare/akgoaoikmbmhcopjgakkcepdgdgkjfbc",
       "chromeExtensionKey": "KEY",
