@@ -68,7 +68,7 @@ export function joinRouteHandler(nextState, replace, callback) {
 export function logoutRouteHandler() {
   Auth.logout()
     .then(() => {
-      window.location.href = "https://skyace-learning.com"
+      window.location.href = "https://skyace.techkids.io"
     });
 }
 
